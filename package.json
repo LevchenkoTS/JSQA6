@@ -1,0 +1,20 @@
+{
+  "name": "jsqa6",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test:notebook": "cypress run --config-file notebook.config.js",
+    "test:phone": "cypress run --config-file phone.config.js",
+    "test:headless:chrome": "cypress run --headless --browser chrome --config-file notebook.config.js",
+    "test:headless:electrone": "cypress run --headless --browser electron --config-file phone.config.js",
+    "test:headded:chrome": "cypress open --browser chrome --config-file phone.config.js",
+    "test:headded:electrone": "cypress open --browser electron --config-file notebook.config.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^12.13.0"
+  }
+}
